@@ -25,6 +25,17 @@
   <meta name="twitter:description" content="Platform Hiburan Online berbasis Gaming dengan sistem stabil dan akses cepat.">
   <meta name="twitter:image" content="https://ningrat4d-official.github.io/ningrat4d-official.webp">
   
+  <!-- JSON-LD WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NINGRAT4D",
+    "url": "https://ningrat4d-official.github.io/"
+  }
+  </script>
+
+  <!-- JSON-LD Organization -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -36,11 +47,35 @@
   }
   </script>
 
+  <!-- JSON-LD BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ningrat4d-official.github.io/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "NINGRAT4D - Platform Hiburan Gaming Online",
+        "item": "https://ningrat4d-official.github.io/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD Article -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "NINGRAT4D | Platform Hiburan Gaming Online Stabil & Resmi",
+    "description": "NINGRAT4D adalah platform hiburan online resmi berbasis gaming dengan sistem stabil, akses cepat, dan tampilan responsif di berbagai perangkat.",
     "image": {
       "@type": "ImageObject",
       "url": "https://ningrat4d-official.github.io/ningrat4d-official.webp"
@@ -62,7 +97,7 @@
   }
   </script>
 
-  <!-- JSON-LD FAQ -->
+  <!-- JSON-LD FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -73,7 +108,7 @@
         "name": "Apa itu NINGRAT4D?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ningrat4d adalah platform resmi untuk online gaming dengan koleksi game p1aling update. Bisa dimainkan dari Desktop maupun Mobile tanpa gangguan."
+          "text": "Ningrat4d adalah platform resmi untuk online gaming dengan koleksi game paling update. Bisa dimainkan dari Desktop maupun Mobile tanpa gangguan."
         }
       },
       {
@@ -155,6 +190,44 @@
       color: #facc15;
       text-shadow: 2px 2px 0 #000;
       font-family: 'Press Start 2P', cursive;
+    }
+
+    /* Breadcrumb Visual */
+    .breadcrumb-nav {
+      margin-bottom: 20px;
+      padding: 10px 0;
+      border-bottom: 2px solid #1e3a8a;
+    }
+    .breadcrumb-nav ol {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+    .breadcrumb-nav li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+      font-family: 'VT323', monospace;
+    }
+    .breadcrumb-nav li a {
+      color: #93c5fd;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .breadcrumb-nav li a:hover {
+      color: #facc15;
+      text-decoration: underline;
+    }
+    .breadcrumb-nav li .breadcrumb-separator {
+      color: #475569;
+      font-size: 14px;
+    }
+    .breadcrumb-nav li:last-child a {
+      color: #facc15;
+      pointer-events: none;
     }
 
     .marquee-container {
@@ -414,6 +487,7 @@
       .dashboard-grid { grid-template-columns: 1fr; }
       .banner-photo { min-height:150px; }
       .ctrl-btn { font-size: 10px; padding: 12px 5px; }
+      .breadcrumb-nav ol { font-size: 14px; }
     }
   </style>
 </head>
@@ -446,6 +520,25 @@
 
   <div class="arcade-screen">
     
+    <!-- Breadcrumb Visual -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="https://ningrat4d-official.github.io/">
+            <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+          <span class="breadcrumb-separator">›</span>
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="https://ningrat4d-official.github.io/">
+            <span itemprop="name">NINGRAT4D - Platform Hiburan Gaming Online</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </nav>
+
     <div class="marquee-container">
       <div class="running-track">
         <span class="text-white-marquee" style="font-size:20px;">🌐 Selamat Datang di NINGRAT4D</span>
@@ -582,8 +675,8 @@
         <div class="faq-answer">Di sini kami menerapkan sistem keamanan berlapis dan didukung tim berpengalaman—baik di depan maupun balik layar—untuk terus menjaga kestabilan dan kenyamanan bermain.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">5. Mengapa kesetabilan dan keamanan menjadi prioritas NINGRAT4D?</div>
-        <div class="faq-answer">Karena kenyamanan bermain adalah tujuan utama dari hiburan yang kami sediakan. Dengan pengalaman panjang, kami yakin selalu memberikan performa terbaik untuk semua customer.</div>
+        <div class="faq-question">5. Mengapa kesetaledan dan keamanan menjadi prioritas NINGRAT4D?</div>
+        <div class="faq-answer">KArena kenyamanan bermain adalah tujuan utama dari hiburan yang kami sediakan. Dengan pengalaman panjang, kami yakin selalu memberikan performa terbaik untuk semua customer.</div>
       </div>
     </section>
 
